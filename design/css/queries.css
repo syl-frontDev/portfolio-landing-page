@@ -1,0 +1,404 @@
+
+
+/*********************************/
+
+
+/* Media queries */
+
+
+/*********************************/
+
+
+
+
+
+
+/* xl (extra large) tablet */
+
+@media (min-width: 1280px) {
+    .hero-subtext p{
+        padding: 0;
+    }
+
+    .portfolio .card-wrapper {
+        display: flex;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .hero-subtext {
+        top: 50%;
+        left: 26%;
+        transform: translate(-50%, -50%);
+    }
+    
+}
+
+
+
+/* lg (large) laptop */
+@media (max-width: 1024px) {
+    .hero-subtext {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        width: 43vw;
+        top: 50%;
+        left: 32%;
+        transform: translate(-50%, -50%);
+    }
+
+    .about-wrapper {
+        gap: 80px;
+    }
+
+    .pall {
+        padding: 7rem 0;
+    }
+}
+
+
+
+
+
+
+/* m (medium) tablet */
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+    }
+
+    .hero {
+        background-color: rgba(0, 0, 0, 0.505);
+    }
+
+    .hero .hero-img {
+        width: 100%;
+        position: relative;
+        background-image: url("../images/Sylvester-harding-profile-2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 0.5;
+        }
+
+    .hero-subtext {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero-subtext h1 {
+        font-size: var(--fontXsTitle);
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .hero-subtext p, .portfolio-title p {
+        display: flex;
+        padding: 0;
+        text-align: center;
+        font-size: var(--fontSm);
+    }
+
+    .hero-subtext a {
+        position: static;
+        font-size: var(--fontSx);
+        padding: 6px 10px;
+    }
+
+    .services {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .services-wrapper .card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .services-title {
+        width: 70vw;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .services-title h1 {
+        font-size: var(--fontsecTitle);
+    }
+
+    .about-image {
+        width: 100%;
+        height: 400px;
+    }
+
+    .about-image img {
+        position: relative;
+        top: -127px;
+    }
+
+    .about-title {
+        width: 100%;
+    }
+    .about-wrapper {
+        flex-direction: column;
+    }
+
+    .about-title h1, .portfolio-title h1, .contact-title h1{
+        font-size: var(--fontsecTitle);
+    }
+
+    .portfolio-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 288px;
+    }
+    
+
+    .portfolio-wrapper {
+        margin: 0;
+    }
+
+    .portfolio .card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+
+    .contact-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 288px;
+    }
+
+    .contact-wrapper {
+        margin: 0;
+    }
+
+    .contact-wrapper .contact-icons {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .contact-wrapper .contact-icons {
+        padding: 0 42px;
+    }
+
+    .contact-wrapper .contact-icons .icon:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .pall {
+        padding: 7rem 0;
+    }
+
+    .footer a {
+        font-size: var(--fontSx);
+    }
+    .footer p {
+        font-size: var(--fontSx);
+    }
+}
+
+@media (min-width: 641px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+
+/* s (small) mobile */
+@media (max-width: 640px) {
+    .all-links {
+        display: none;
+    }
+
+    .all-links {
+        position: fixed;
+        inset: 0;
+        padding: 1.5rem;
+        flex-direction: column
+    }
+
+
+    .hero {
+        background-color: rgba(0, 0, 0, 0.505);
+    }
+
+    .hero .hero-img {
+        width: 100%;
+        position: relative;
+        background-image: url("../images/Sylvester-harding-profile-2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 0.5;
+        }
+
+    .hero-subtext {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero-subtext h1 {
+        font-size: var(--fontXsTitle);
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .hero-subtext p, .portfolio-title p {
+        display: flex;
+        padding: 0;
+        text-align: center;
+        font-size: var(--fontSm);
+    }
+
+    .hero-subtext a {
+        position: static;
+        font-size: var(--fontSx);
+        padding: 6px 10px;
+    }
+
+    .services {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .services-wrapper .card-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .services-title {
+        width: 70vw;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .services-title h1 {
+        font-size: var(--fontsecTitle);
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-image {
+        width: 100%;
+        height: 400px;
+    }
+
+    .about-image img {
+        position: relative;
+        top: -158px;
+    }
+
+    .about-title {
+        width: 100%;
+    }
+    .about-wrapper {
+        flex-direction: column;
+    }
+
+    .about-title h1, .portfolio-title h1, .contact-title h1{
+        font-size: var(--fontsecTitle);
+    }
+
+    .portfolio-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 288px;
+    }
+    
+
+    .portfolio-wrapper {
+        margin: 0;
+    }
+
+    .portfolio .card-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contact-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 288px;
+    }
+
+    .contact-wrapper {
+        margin: 0;
+    }
+
+    .contact-wrapper .contact-icons {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-wrapper .contact-icons .icon:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .pall {
+        padding: 7rem 0;
+    }
+
+    .footer a {
+        font-size: var(--fontSx);
+    }
+    .footer p {
+        font-size: var(--fontSx);
+    }
+
+    .container {
+        margin: 0 3rem;
+    }
+    .hide-for-screen {
+        display: flex;
+    }
+}
+
+@media (max-width: 475px) {
+    .about-image {
+        width: 100%;
+        height: auto;
+    }
+    .about-image img {
+        position: static;
+    }
+
+    .hide-for-screen {
+        display: flex;
+    }
+}
